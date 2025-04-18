@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from history_service.app.models import Message
-from history_service.app.db import init_db, get_db, MessageDB
+from app.models import Message
+from app.db import init_db, get_db, MessageDB
 
 
 app = FastAPI()
